@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@": [
+        "./src"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@modules": [
+        "./src/modules"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@config": [
+        "./config"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@storage": [
+        "./storage"
+      ],
+      "@storage/*": [
+        "./storage/*"
+      ],
+      "@public": [
+        "./public"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@resources": [
+        "./resources"
+      ],
+      "@resources/*": [
+        "./resources/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "config/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
